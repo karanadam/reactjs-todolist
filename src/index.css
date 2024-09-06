@@ -62,6 +62,19 @@ header input {
   background: white;
 }
 
+.logo-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.logo-img {
+  display: flex;
+  justify-items: center;
+}
+
 p {
   font-size: 0.9em;
 }

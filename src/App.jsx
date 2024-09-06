@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import TodoInput from "./components/TodoInput"
 import TodoList from "./components/TodoList"
+import Logo from "../public/daily-do-logo.png"
 
 function App() {
 
@@ -55,6 +56,9 @@ function App() {
 
   return (
     <>
+      <div className="logo-container">
+        <img src={Logo} alt="logo" width={'240px'} className="logo-img" />
+      </div>
       <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleTodoInput={handleTodoInput} />
       <TodoList todos={todos} handleDelete={handleDelete} handleEditValue={handleEditValue} />
     </>
