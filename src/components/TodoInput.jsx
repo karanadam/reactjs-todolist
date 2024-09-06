@@ -8,12 +8,22 @@ const TodoInput = (props) => {
         <header>
             <input value={todoValue} onChange={(e) => {
                 setTodoValue(e.target.value)
-            }} placeholder='Enter Item...' />
+            }} onKeyDown={(e) => {
+                if (e.key == 'Enter') {
+                    handleTodoInput(todoValue)
+                    setTodoValue('')
+                }
+            }}
+
+                placeholder='Enter Item...' />
             <button onClick={() => {
                 handleTodoInput(todoValue)
                 setTodoValue('')
-            }}>+</button>
-        </header>
+
+            }
+
+            } >+</button>
+        </header >
     );
 }
 
