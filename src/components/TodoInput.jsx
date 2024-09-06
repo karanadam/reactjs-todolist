@@ -15,7 +15,7 @@ const TodoInput = (props) => {
                 }
             }}
 
-                placeholder='Enter Item...' />
+                placeholder='Enter Task...' />
             <button onClick={() => {
                 handleTodoInput(todoValue)
                 setTodoValue('')
